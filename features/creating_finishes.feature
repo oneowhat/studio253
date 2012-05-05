@@ -1,0 +1,13 @@
+Feature: Creating Finishes
+	In order to have finishes to upload images to
+	As a user
+	I want to create them easily
+	
+	Scenario: Creating a finish
+		Given I am on the finishes page
+		When I follow "New Finish"
+		And I fill in "Title" with "Seafoam"
+		And I fill in "Description" with "Seafoam Green"
+		And I fill in "Price per foot" with "12"
+		And I press "Create Finish"
+		Then I should see "Finish has been created"
