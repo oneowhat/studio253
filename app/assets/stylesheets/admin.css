@@ -1,0 +1,420 @@
+body { 
+	background-color: #fff; 
+	color: #333; 
+	width: 1000px; 
+	height: 100%; 
+}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   14px;
+  line-height: 18px;
+  margin: 5px auto 0px auto;
+}
+
+#container {
+	position: relative;
+	width: 1000px;
+	background-color: #fff; 	
+}
+
+fieldset {
+	border: 2px solid #009966;
+	margin: 0pt 0pt 10px;
+	padding:0pt 10px 10px;
+}
+
+legend {
+	color:#009966;
+	font-size:18px;
+	margin:0pt 0pt 5px;
+	padding-top: 0px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #993333; text-decoration: none; }
+
+.notice {
+	color: #617C58;	
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #993333;
+  display: table;
+}
+
+#errorExplanation {
+  width: 48em;
+  border: 2px solid #993333;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  margin-left: 198px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #993333;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/*admin layout*/
+
+#logodiv {
+	top: -8px;
+	background: transparent;
+	z-index: 1;
+	position: absolute;
+}
+
+#modalcontrol {	
+	z-index: 3;
+	left: 0;
+	position: absolute;  
+	background-color: #181818;
+	filter: alpha(opacity=65);
+	-moz-opacity: .65;
+	opacity: .65;
+	height: 100%;
+	width: 100%;
+}
+
+#innermodalcontrol {
+	width: 300px;
+	border: 2px solid #600000; 
+	background-color: white;
+	padding: 20px;
+	position: absolute;
+	top: 100px;
+	left: 330px;
+	z-index: 4;
+}
+
+#assetmodal{
+	z-index: 3;
+	left: 0px;
+	background-color: #F8F8F8;
+	position: absolute;  
+	width: 100%;
+}
+
+#innerassetmodal {
+	border-left: 2px solid #600000; 
+	border-right: 2px solid #600000; 
+	border-bottom: 2px solid #600000;  
+	border-top: 2px solid #600000; 
+	background-color: white;
+	padding: 50px;
+	position: absolute;
+	top: 60px;
+}
+
+#banner {
+	width: 100%;
+	text-align: right;
+	font-weight: bold;
+}
+
+#main {
+	background: white;
+	width: 100%;
+}
+
+#columnsfooter {
+	float: left;
+	width: 100%;
+}
+
+#mainfooter {
+	border-top: transparent url(/images/searchbar.png) no-repeat scroll 0pt;	
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	background:#6633FF none repeat scroll 0 0;
+	width: 100%;
+}
+
+#mainfooter a {
+	color: white
+}
+
+.searchbar {
+	color: black;
+	background: transparent url(/images/searchbar.png) no-repeat scroll 0pt;
+	padding-right: 1em;
+	padding-left: 36em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/*admin table styles */
+
+.adminlabel {
+  background-color: #F0F0F0;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.adminbody {
+   color: #333;
+}
+
+.adminlistheader {
+	background-color: #CCCCFF;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.emptylist {
+	background-color: #CCCC99;
+}
+
+/**/
+
+div.uploadStatus {
+  	margin: 5px;
+}
+
+div.progressBar {
+  	margin: 5px;
+}
+
+div.progressBar div.border {
+	background-color: #fff;
+	border: 1px solid grey;
+	width: 100%;
+}
+
+div.progressBar div.background {
+	background-color: #333;
+	height: 18px;
+	width: 0%;
+}
+
+/* List styles, alternating rows, etc...*/
+.ListTitle {
+	color: #244;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.ListActions {
+	vertical-align: middle;
+	font-size: x-small;
+	text-align: right;
+	padding-left: 1em;
+}
+
+.ListLine0{
+	background: #E8E8E8;
+}
+
+.ListLine0 a {
+	text-decoration: none;
+}
+
+.ListLine1{
+	background: #F0F0F0;
+}
+
+.ListLine1 a {
+	text-decoration: none;
+}
+
+.tag_link {
+	color: black;
+	background: transparent url(/images/searchbar.png) no-repeat scroll center;	
+	padding: 2px;
+}
+
+/*navbar*/
+
+.columns_tabnav_content {
+	font: 0.9em/1.3em "bitstream vera sans", verdana, sans-serif;
+	text-align: justify;
+	background: white;
+	padding-bottom: 20px;
+	border-top: none;
+	z-index: 2;	
+	height: 100%;
+}
+
+.sub_columns_tabnav {
+	color: #6633FF;
+	background-color: #6633FF;
+	border-bottom: 2px solid #6633FF;
+	padding: 3px;
+	z-index: 2;
+	padding-left: 30%;
+}
+
+.sub_columns_tabnav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+.sub_columns_tabnav li {
+	display: inline;
+	overflow: hidden;
+	list-style-type: none; 
+	white-space: nowrap;
+}
+.sub_columns_tabnav li a {
+	color: white;
+	background: #6633FF;
+	font: 1em "Trebuchet MS", Arial, sans-serif;
+	border-bottom: 2px solid #6633FF;
+	padding: 2px 5px 0px 5px;
+	margin: 0;
+	text-decoration: none;
+}
+
+.sub_columns_tabnav li a:hover {
+	color: white;
+	text-decoration: underline; 
+}
+
+.sub_columns_tabnav a.active {
+	font-weight: bold;
+}
+
+#pic_select_res {
+}
+
+#pic_select_res div {
+	float: left;
+}
+
+#pic_view_res {
+	width: 40%;
+	text-align: center;
+	float: right;
+}
+
+.thumb {
+	border:medium none;
+}
+
+.thumb a {
+	overflow: hidden;
+}
+
+.thumb img {
+	opacity: 0.6;
+	overflow: hidden;
+}
+
+.thumb img:hover {
+	opacity: 1.0;
+}
+
+.picture {
+	background:transparent url(/images/viewer.png) no-repeat scroll center;
+	height: 330px;
+}
+
+.details {
+	display: none;
+}
+
+div.tabmenudiv {
+	color: #000000;
+	background-color: white;
+	margin: 12px 0px 0px 0px;
+	border-bottom: 2px solid #6633FF;
+	padding: 0px;
+	z-index: 2;
+	padding-left: 28%;
+}
+
+ul.tabmenu {
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+ul.tabmenu li {
+	display: inline;
+	overflow: hidden;
+	list-style-type: none; 
+	white-space: nowrap;
+}
+
+ul.tabmenu li a {
+	background: transparent url(/images/navbartabnofocus.png) no-repeat scroll 0pt;
+	color:#FFFFFF;
+	font-weight: bold;
+	margin: 0pt;
+	padding: 7px 20px 0px;
+	text-align: center;
+	text-decoration: none;
+	outline-color:invert;
+	outline-style:none;
+	outline-width:medium;
+	position:relative;
+}
+
+ul.tabmenu li a, a.active {
+	color: white;
+	background: #6699FF;
+	font: bold 1em "Trebuchet MS", Arial, sans-serif;
+	border-bottom: 2px solid #6633FF;
+	padding: 2px 5px 0px 5px;
+	margin: 0;
+	text-decoration: none; 
+}
+
+ul.tabmenu a.active {
+	color: white;
+	background: transparent url(/images/navbartab.png) no-repeat scroll 0pt;
+	border-bottom: 2px solid #6633FF; 
+}
+
+ul.tabmenu li a.ie_hover {
+	color: black;
+	background: transparent url(/images/navbartab.png) no-repeat scroll 0pt;
+    cursor: pointer;
+}
+
+ul.tabmenu li a:hover {
+	color: black;
+	background: transparent url(/images/navbartab.png) no-repeat scroll 0pt;
+}
+
+ul.tabmenu a.active:hover {
+	color: black;
+	background: transparent url(/images/navbartab.png) no-repeat scroll 0pt;
+}
+
+

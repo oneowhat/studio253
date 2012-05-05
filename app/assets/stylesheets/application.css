@@ -1,13 +1,265 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
-*/
+body { 
+	background: transparent url(/images/res_bg.png) repeat-y scroll center;
+	background-color: #fff; color: #663300; width: 1100px;}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px auto 0px auto;
+}
+
+a { color: #999966; }
+a:hover { color: #663300; text-decoration: none; }
+
+fieldset {
+	border: 2px solid #999966;
+	margin: 0pt 65pt 10px;
+	padding: 0pt 10px 10px;
+}
+
+legend {
+	color:#999966;
+	font-size:18px;
+	margin:0pt 0pt 5px;
+	padding-top:0px;
+}
+
+#page {
+  margin: 0px auto 0px auto;
+}
+
+#header{
+	margin: 100px 0px 100px 0px;
+}
+
+#header_res {
+	margin: 50px 0px 20px 0px;
+}
+
+#header_eco {
+	margin-left: 69px;
+}
+
+#header_res img{
+	overflow: hidden;
+}
+
+#main {	
+	width: 100%;
+}
+
+#footer{
+	background: transparent url(/images/PS0019.png) no-repeat top center;
+	float: left;
+	padding-top: 2em;
+	margin-left: 310px;
+	margin-bottom: 50px;
+    font-size: 10px;
+}
+
+#logodiv {
+	top: 37px;
+	left: 810px;
+	background: transparent;
+	z-index: 1;
+	position: absolute;
+}
+
+#homebackground{
+	background: transparent url(/images/homebackground.png) no-repeat top center;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#profiles{
+	margin: 50px 200px 0px 200px;
+}
+
+.public_nav {
+	float: left;
+	margin-left: 233px;
+	margin-top: 30px;
+	background-color: white;
+	font-weight: bold;
+}
+
+
+.public_nav  a {
+	margin: 0pt;
+	padding: 7px 20px 0px;
+	text-align: center;
+	text-decoration: none;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: medium;
+	position: relative;
+}
+
+.public_nav   a:hover, .active {
+	background:transparent url(/images/active_tab.png) top center no-repeat;
+	height: 50px;
+	color: #663300;
+	margin: 0pt;
+	padding: 7px 20px 0px;
+	text-align: center;
+	text-decoration: none;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: medium;
+	position: relative;
+}
+
+#pic_select_res {
+	float: left;
+	max-width: 40em;
+	padding-top: 3em;
+	margin-left: 80px;
+}
+
+#pic_select_res div {
+	float: left;
+}
+
+#pic_view_res {
+	width: 34%;
+	text-align: center;
+	float: right;
+	margin-right: 80px;
+}
+
+#pic_select_eco {
+	float: left;
+	max-width: 40em;
+	padding-top: 9em;
+	margin-left: 100px;
+}
+
+#pic_select_eco div {
+	float: left;
+}
+
+#technique_info {
+	width: 44%;
+	float: left;
+	margin: 20pt 0pt 0pt 90pt;
+}
+
+#technique_info .title {
+	font-weight: bold;
+}
+
+#technique_image {
+	background:transparent url(/images/viewer.png) no-repeat scroll center;
+	width: 34%;
+	text-align: center;
+	float: right;
+	margin: 0pt 50pt 10pt 0px;
+}
+
+.thumb {
+	background:transparent url(/images/thumb_background.jpg) no-repeat scroll center;
+	border:medium none;
+	padding:9px;
+}
+
+.thumb img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.thumb img:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+.picture {
+	background:transparent url(/images/viewer.png) no-repeat scroll center;
+	height: 330px;
+}
+
+.details {
+	display: none;
+}
+
+.ListTitle {
+	font-weight: bold;
+	color: #999966;
+}
+
+.ListLine0{
+	background: #E8E8E8;
+}
+
+.ListLine0 a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.ListLine1{
+	background: #F0F0F0;
+}
+
+.ListLine1 a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.ProfileListLine0 {
+
+}
+
+.ProfileListLine1 {
+
+}
+
+.searchbar {
+	color: black;
+	background: transparent url(/images/searchbar2.png) no-repeat scroll 0pt;
+	padding-right: 1em;
+	padding-left: 36em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-left: 100pt;
+	margin-right: 53pt;
+}
+
+.pagination {
+	background: transparent url(/images/searchbar2.png) no-repeat scroll 0pt;
+    font-weight: bold;
+    white-space: nowrap;
+	text-align: center;
+}
+
+.pagination a {
+
+}
+
+#tags {
+	font-weight: bold;
+	padding: 1em;
+	margin-left: 55pt;
+}
+
+#tags a {
+	color: #663300;
+	background-color: #CCCCFF;		
+	padding: 2px;
+	text-decoration: none;
+}
+
+.tags a {
+	color: #663300;
+	background-color: #CCCCFF;	
+	padding: 2px;
+	text-decoration: none;
+}
+
+#tags a:hover {
+	text-decoration: underline;
+}
+
+.tags a:hover {
+	text-decoration: underline;
+}

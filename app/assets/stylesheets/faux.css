@@ -1,0 +1,50 @@
+
+.pagination {
+	background-color: #CCCCFF;
+    font-weight: bold;
+    white-space: nowrap;
+	text-align: center;
+}
+
+.pagination a {
+	
+}
+
+div.auto_complete {
+	float: left;
+	background: white;
+}
+
+.autocomplete_list {
+	list-style-position: outside;
+	list-style-type: none;
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	width: 99%;
+	margin: 0;
+	padding: 0;
+}
+
+.autocomplete_list strong.highlight {
+	margin: 0;
+	padding: 0;
+}
+
+.autocomplete_item {
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none; 
+	text-align: left;
+}
+
+.autocomplete_item selected {
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none; 
+	text-align: left;
+}
+
+div.autocomplete ul strong.highlight {
+	color: #800;
+}
